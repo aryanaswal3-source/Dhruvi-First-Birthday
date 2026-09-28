@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dhruvi's First Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating-elements" id="floatingElements"></div>
+
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+<audio id="birthdayMusic" loop>
+    <source src="assets/music/birthday.mp3" type="audio/mpeg">
+</audio>
+
+
+<section class="opening-screen" id="opening">
+
+    <div class="opening-content">
+
+        <p class="opening-small">
+            A little journey through your first year...
+        </p>
+
+        <h1>Dhruvi ❤️</h1>
+
+        <h2>Happy 1st Birthday 🎂</h2>
+
+        <p class="opening-date">
+            22 October • Your First Big Milestone ✨
+        </p>
+
+        <button class="main-btn" onclick="openMemories()">
+            ✨ Open My Memories
+        </button>
+
+    </div>
+
+</section>
+
+
+<main id="memories" class="hidden-section">
+
+    <section class="memories-section">
+
+        <div class="section-header">
+
+            <p class="memory-small">
+                One year. A thousand little moments. ❤️
+            </p>
+
+            <h2>Dhruvi's Memories 📸</h2>
+
+            <p class="memory-text">
+                Every picture holds a little piece of your beautiful first year.
+            </p>
+
+        </div>
+
+
+        <div class="memory-grid">
+
+            <div class="memory-card">
+                <div class="memory-image">
+                    <img src="assets/images/month-01.jpg" alt="Dhruvi">
+                </div>
+
+                <div class="memory-info">
+                    <h3>Welcome to the World 👶</h3>
+                    <p>The beginning of the most beautiful journey.</p>
+                </div>
+            </div>
+
+
+            <div class="memory-card">
+                <div class="memory-image">
+                    <img src="assets/images/month-03.jpg" alt="Dhruvi">
+                </div>
+
+                <div class="memory-info">
+                    <h3>That Little Smile ❤️</h3>
+                    <p>A smile that made everyone's day brighter.</p>
+                </div>
+            </div>
+
+
+            <div class="memory-card">
+                <div class="memory-image">
+                    <img src="assets/images/month-06.jpg" alt="Dhruvi">
+                </div>
+
+                <div class="memory-info">
+                    <h3>Growing Every Day 🥰</h3>
+                    <p>Every month brought a beautiful new memory.</p>
+                </div>
+            </div>
+
+
+            <div class="memory-card">
+                <div class="memory-image">
+                    <img src="assets/images/month-12.jpg" alt="Dhruvi">
+                </div>
+
+                <div class="memory-info">
+                    <h3>One Beautiful Year 🎂</h3>
+                    <p>And finally, the first big milestone.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="memory-buttons">
+
+            <button onclick="openTimeline()">
+                🌱 First Year
+            </button>
+
+            <button onclick="openPhotoWall()">
+                📸 Photo Wall
+            </button>
+
+            <button onclick="openWishes()">
+                💌 Birthday Wishes
+            </button>
+
+            <button onclick="openVideos()">
+                🎥 Video Wall
+            </button>
+
+            <button onclick="openLetter()">
+                💌 Birthday Book
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<section id="timeline" class="page-section hidden-section">
+
+    <button class="back-btn" onclick="backToMemories()">
+        ← Back
+    </button>
+
+
+    <div class="section-header">
+
+        <p class="memory-small">
+            Twelve months. Twelve beautiful chapters. ❤️
+        </p>
+
+        <h2>Dhruvi's First Year 🌱</h2>
+
+        <p class="memory-text">
+            A month-by-month journey through your beautiful first year.
+        </p>
+
+    </div>
+
+
+    <div class="timeline-container">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">👶</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-01.jpg" alt="Month 1">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 01</span>
+
+                    <h3>Welcome to the World 👶</h3>
+
+                    <p>
+                        The beginning of the most beautiful journey
+                        of our little Dhruvi.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🍼</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-02.jpg" alt="Month 2">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 02</span>
+
+                    <h3>Growing Little by Little 🍼</h3>
+
+                    <p>
+                        Every little day brought a new smile
+                        and a new memory.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">😊</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-03.jpg" alt="Month 3">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 03</span>
+
+                    <h3>That Beautiful Smile 😊</h3>
+
+                    <p>
+                        That tiny smile became everyone's
+                        favourite thing.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🌸</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-04.jpg" alt="Month 4">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 04</span>
+
+                    <h3>More Little Moments 🌸</h3>
+
+                    <p>
+                        Another beautiful month full of
+                        cuddles and memories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🧸</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-05.jpg" alt="Month 5">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 05</span>
+
+                    <h3>Getting Playful 🧸</h3>
+
+                    <p>
+                        Little games, little laughs and lots
+                        of happiness.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">💕</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-06.jpg" alt="Month 6">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 06</span>
+
+                    <h3>Halfway to One 💕</h3>
+
+                    <p>
+                        Six beautiful months of love,
+                        laughter and memories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">👣</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-07.jpg" alt="Month 7">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 07</span>
+
+                    <h3>Little Adventures 👣</h3>
+
+                    <p>
+                        Every little movement became
+                        a new adventure.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🎈</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-08.jpg" alt="Month 8">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 08</span>
+
+                    <h3>More Smiles 🎈</h3>
+
+                    <p>
+                        More smiles, more laughter and
+                        more beautiful moments.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🥰</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-09.jpg" alt="Month 9">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 09</span>
+
+                    <h3>Growing So Fast 🥰</h3>
+
+                    <p>
+                        It felt like yesterday when you
+                        were just born.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🌱</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-10.jpg" alt="Month 10">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 10</span>
+
+                    <h3>Almost One 🌱</h3>
+
+                    <p>
+                        Only two more months until
+                        your very first birthday.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">✨</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-11.jpg" alt="Month 11">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>Month 11</span>
+
+                    <h3>One Step Closer ✨</h3>
+
+                    <p>
+                        The countdown to your first
+                        big milestone began.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot">🎂</div>
+
+            <div class="timeline-card">
+
+                <div class="timeline-photo">
+                    <img src="assets/images/month-12.jpg" alt="Month 12">
+                </div>
+
+                <div class="timeline-content">
+
+                    <span>22 October</span>
+
+                    <h3>Happy 1st Birthday 🎂</h3>
+
+                    <p>
+                        One whole year of love, laughter
+                        and unforgettable memories.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="photoWall" class="page-section hidden-section">
+
+    <button class="back-btn" onclick="backToMemories()">
+        ← Back
+    </button>
+
+
+    <div class="section-header">
+
+        <p class="memory-small">
+            Little moments. Big memories. ❤️
+        </p>
+
+        <h2>Photo Wall 📸</h2>
+
+        <p class="memory-text">
+            Thirty little pieces of Dhruvi's beautiful first year.
+        </p>
+
+    </div>
+
+
+    <div class="photo-wall">
+
+        <div class="wall-photo"><img src="assets/images/photo-01.jpg" alt="Dhruvi 1"></div>
+        <div class="wall-photo"><img src="assets/images/photo-02.jpg" alt="Dhruvi 2"></div>
+        <div class="wall-photo"><img src="assets/images/photo-03.jpg" alt="Dhruvi 3"></div>
+        <div class="wall-photo"><img src="assets/images/photo-04.jpg" alt="Dhruvi 4"></div>
+        <div class="wall-photo"><img src="assets/images/photo-05.jpg" alt="Dhruvi 5"></div>
+        <div class="wall-photo"><img src="assets/images/photo-06.jpg" alt="Dhruvi 6"></div>
+        <div class="wall-photo"><img src="assets/images/photo-07.jpg" alt="Dhruvi 7"></div>
+        <div class="wall-photo"><img src="assets/images/photo-08.jpg" alt="Dhruvi 8"></div>
+        <div class="wall-photo"><img src="assets/images/photo-09.jpg" alt="Dhruvi 9"></div>
+        <div class="wall-photo"><img src="assets/images/photo-10.jpg" alt="Dhruvi 10"></div>
+
+        <div class="wall-photo"><img src="assets/images/photo-11.jpg" alt="Dhruvi 11"></div>
+        <div class="wall-photo"><img src="assets/images/photo-12.jpg" alt="Dhruvi 12"></div>
+        <div class="wall-photo"><img src="assets/images/photo-13.jpg" alt="Dhruvi 13"></div>
+        <div class="wall-photo"><img src="assets/images/photo-14.jpg" alt="Dhruvi 14"></div>
+        <div class="wall-photo"><img src="assets/images/photo-15.jpg" alt="Dhruvi 15"></div>
+        <div class="wall-photo"><img src="assets/images/photo-16.jpg" alt="Dhruvi 16"></div>
+        <div class="wall-photo"><img src="assets/images/photo-17.jpg" alt="Dhruvi 17"></div>
+        <div class="wall-photo"><img src="assets/images/photo-18.jpg" alt="Dhruvi 18"></div>
+        <div class="wall-photo"><img src="assets/images/photo-19.jpg" alt="Dhruvi 19"></div>
+        <div class="wall-photo"><img src="assets/images/photo-20.jpg" alt="Dhruvi 20"></div>
+
+        <div class="wall-photo"><img src="assets/images/photo-21.jpg" alt="Dhruvi 21"></div>
+        <div class="wall-photo"><img src="assets/images/photo-22.jpg" alt="Dhruvi 22"></div>
+        <div class="wall-photo"><img src="assets/images/photo-23.jpg" alt="Dhruvi 23"></div>
+        <div class="wall-photo"><img src="assets/images/photo-24.jpg" alt="Dhruvi 24"></div>
+        <div class="wall-photo"><img src="assets/images/photo-25.jpg" alt="Dhruvi 25"></div>
+        <div class="wall-photo"><img src="assets/images/photo-26.jpg" alt="Dhruvi 26"></div>
+        <div class="wall-photo"><img src="assets/images/photo-27.jpg" alt="Dhruvi 27"></div>
+        <div class="wall-photo"><img src="assets/images/photo-28.jpg" alt="Dhruvi 28"></div>
+        <div class="wall-photo"><img src="assets/images/photo-29.jpg" alt="Dhruvi 29"></div>
+        <div class="wall-photo"><img src="assets/images/photo-30.jpg" alt="Dhruvi 30"></div>
+
+    </div>
+
+</section>
+
+
+<section id="wishes" class="page-section hidden-section">
+
+    <button class="back-btn" onclick="backFromWishes()">
+        ← Back
+    </button>
+
+
+    <div class="section-header">
+
+        <p class="memory-small">
+            Little voices, forever memories ❤️
+        </p>
+
+        <h2>Birthday Wishes For Dhruvi 💌</h2>
+
+        <p class="memory-text">
+            Special birthday wishes from the people who love you the most.
+        </p>
+
+    </div>
+
+
+    <div class="wishes-grid">
+
+        <div class="wish-card">
+
+            <div class="wish-video">
+                <video controls preload="metadata">
+                    <source src="assets/videos/mummy-wish.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wish-card-content">
+                <div class="wish-icon">👩</div>
+                <h3>Mummy</h3>
+                <p>A special birthday wish just for Dhruvi ❤️</p>
+            </div>
+
+        </div>
+
+
+        <div class="wish-card">
+
+            <div class="wish-video">
+                <video controls preload="metadata">
+                    <source src="assets/videos/papa-wish.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wish-card-content">
+                <div class="wish-icon">👨</div>
+                <h3>Papa</h3>
+                <p>A father's special birthday message ❤️</p>
+            </div>
+
+        </div>
+
+
+        <div class="wish-card">
+
+            <div class="wish-video">
+                <video controls preload="metadata">
+                    <source src="assets/videos/dadi-dada-wish.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wish-card-content">
+                <div class="wish-icon">👵👴</div>
+                <h3>Dadi & Dada</h3>
+                <p>Lots of blessings and love for our little Dhruvi ❤️</p>
+            </div>
+
+        </div>
+
+
+        <div class="wish-card">
+
+            <div class="wish-video">
+                <video controls preload="metadata">
+                    <source src="assets/videos/nani-wish.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wish-card-content">
+                <div class="wish-icon">👵</div>
+                <h3>Nani</h3>
+                <p>A beautiful birthday wish filled with love ❤️</p>
+            </div>
+
+        </div>
+
+
+        <div class="wish-card">
+
+            <div class="wish-video">
+                <video controls preload="metadata">
+                    <source src="assets/videos/mama-mosi-wish.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wish-card-content">
+                <div class="wish-icon">👨‍👩‍👧</div>
+                <h3>Mama & Mosi</h3>
+                <p>A special message from your loving family ❤️</p>
+            </div>
+
+        </div>
+
+
+        <div class="wish-card">
+
+            <div class="wish-video">
+                <video controls preload="metadata">
+                    <source src="assets/videos/chacha-wish.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="wish-card-content">
+                <div class="wish-icon">👨</div>
+                <h3>Chacha</h3>
+                <p>A special birthday message full of love ❤️</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="videos" class="page-section hidden-section">
+
+    <button class="back-btn" onclick="backToMemories()">
+        ← Back
+    </button>
+
+
+    <div class="section-header">
+
+        <p class="memory-small">
+            Little videos. Big memories. 🎥
+        </p>
+
+        <h2>Dhruvi's Video Wall 🎥</h2>
+
+        <p class="memory-text">
+            Fifteen little moments captured forever.
+        </p>
+
+    </div>
+
+
+    <div class="video-wall">
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-01.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-02.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-03.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-04.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-05.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-06.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-07.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-08.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-09.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-10.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-11.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-12.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-13.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-14.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-wall-item">
+            <video controls preload="metadata">
+                <source src="assets/videos/memory-15.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="letter" class="page-section hidden-section">
+
+    <button class="back-btn" onclick="backToMemories()">
+        ← Back
+    </button>
+
+
+    <div class="section-header">
+
+        <p class="memory-small">
+            A little letter for a lifetime of memories ❤️
+        </p>
+
+        <h2>Dhruvi's Birthday Book 💌</h2>
+
+    </div>
+
+
+    <div class="real-book" id="birthdayBook">
+
+        <div class="book-back-cover"></div>
+
+
+        <div class="book-pages">
+
+
+            <div class="page page-left">
+
+                <div class="page-inner">
+
+                    <div class="page-label">
+                        A Beautiful Beginning
+                    </div>
+
+                    <div class="book-photo">
+
+                        <img
+                            src="assets/images/month-12.jpg"
+                            alt="Dhruvi"
+                        >
+
+                    </div>
+
+                    <div class="page-number">
+                        01
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="page page-right">
+
+                <div class="page-inner">
+
+                    <div class="page-label">
+                        A Letter For You
+                    </div>
+
+                    <div class="letter-content">
+
+                        <h2>Dear Dhruvi ❤️</h2>
+
+                        <p>
+                            One year ago, a tiny little soul came into
+                            our lives and made everything brighter.
+                        </p>
+
+                        <p>
+                            In just one year, you have given us
+                            countless smiles, countless memories,
+                            and a love that is impossible to describe.
+                        </p>
+
+                        <p>
+                            Today you are turning one, and this is
+                            only the beginning of your beautiful journey.
+                        </p>
+
+                        <p>
+                            May you always smile, always stay happy,
+                            and always be surrounded by people who
+                            love you.
+                        </p>
+
+                        <p>
+                            Keep growing, keep smiling and keep
+                            spreading happiness wherever you go.
+                        </p>
+
+                        <p class="letter-ending">
+                            Happy 1st Birthday, Dhruvi! 🎂❤️
+                        </p>
+
+                        <p class="letter-love">
+                            With lots and lots of love ❤️
+                        </p>
+
+                    </div>
+
+                    <div class="page-number">
+                        02
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="book-cover">
+
+            <div class="cover-spine"></div>
+
+            <div class="cover-decoration">
+
+                <div class="cover-small">
+                    THE STORY OF
+                </div>
+
+                <h1>Dhruvi</h1>
+
+                <div class="cover-line"></div>
+
+                <h2>My First Birthday</h2>
+
+                <div class="cover-heart">
+                    ♥
+                </div>
+
+                <div class="cover-date">
+                    22 • OCTOBER
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="book-open-hint">
+            A little book of love ❤️
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="final" class="page-section hidden-section">
+
+    <div class="final-content">
+
+        <p class="memory-small">
+            A whole year of love, laughter and memories...
+        </p>
+
+        <h1>Happy 1st Birthday</h1>
+
+        <h2>Dhruvi ❤️</h2>
+
+        <div class="cake">🎂</div>
+
+        <p class="final-message">
+            May your life always be filled with happiness,
+            love, laughter and beautiful adventures.
+            <br><br>
+            This is only the beginning of your wonderful story. ❤️
+        </p>
+
+        <div class="final-hearts">
+            ❤️ ✨ 🎈 ⭐ 🎉
+        </div>
+
+    </div>
+
+    <div id="confetti"></div>
+
+</section>
+
+
+<div id="photoViewer" class="photo-viewer">
+
+    <button
+        class="viewer-close"
+        onclick="closePhotoViewer()"
+    >
+        ×
+    </button>
+
+    <img
+        id="viewerImage"
+        src=""
+        alt="Full photo"
+    >
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
