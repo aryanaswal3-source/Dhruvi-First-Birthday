@@ -1134,3 +1134,228 @@ button {
     }
 
 }
+
+/* =========================================================
+   RESPONSIVE ADDITIONS
+   Paste this at the VERY END of style.css (after the old media queries).
+   Only sizes/layout are adjusted. Colors, fonts, animations and the
+   overall design are not changed.
+   ========================================================= */
+
+
+/* ---------- All screen sizes ---------- */
+
+/* Mobile browsers: 100vh is taller than the visible area (address bar) */
+.opening-screen {
+    min-height: 100vh;
+    min-height: 100dvh;
+}
+
+/* Book was 94vw wide but its container is narrower because of the
+   section padding, so it overflowed to the right / looked off-centre */
+.real-book {
+    width: min(1000px, 100%);
+}
+
+@media (min-width: 701px) {
+    #letter {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+/* Close button could hide behind a big photo */
+.viewer-close {
+    z-index: 5;
+}
+
+
+/* ---------- Tablet (701px - 1000px) ---------- */
+/* Letter text was too long for the smaller two-page book and got clipped */
+
+@media (min-width: 701px) and (max-width: 1000px) {
+
+    .real-book {
+        height: 640px;
+    }
+
+    .page-inner {
+        padding: 26px 26px 44px;
+    }
+
+    .page-label {
+        margin-bottom: 16px;
+    }
+
+    .letter-content {
+        font-size: 13.5px;
+        line-height: 1.55;
+    }
+
+    .letter-content h2 {
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+
+    .letter-content p {
+        margin-bottom: 9px;
+    }
+
+}
+
+
+/* ---------- Touch devices: no "stuck" hover effects ---------- */
+
+@media (hover: none) {
+
+    .memory-card:hover,
+    .wish-card:hover,
+    .video-wall-item:hover,
+    .main-btn:hover,
+    .memory-buttons button:hover,
+    .back-btn:hover {
+        transform: none;
+    }
+
+    .memory-card:hover .memory-image img,
+    .wall-photo:hover img,
+    .timeline-photo img:hover {
+        transform: none;
+    }
+
+    .memory-buttons button:hover,
+    .back-btn:hover {
+        background: white;
+        color: #713c5c;
+    }
+
+    .video-wall-item:hover {
+        box-shadow: 0 12px 35px rgba(90, 40, 70, 0.12);
+    }
+
+}
+
+
+/* ---------- Mobile (up to 700px) ---------- */
+
+@media (max-width: 700px) {
+
+    .opening-screen {
+        padding: 24px 20px;
+    }
+
+    /* Timeline: dots were not sitting on the vertical line */
+    .timeline-container {
+        padding-left: 52px;
+        padding-right: 0;
+    }
+
+    .timeline-container::before {
+        left: 18px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding: 12px 0;
+    }
+
+    .timeline-dot {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+        top: 24px;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-dot,
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: -52px;
+        right: auto;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    /* Photo wall: 2 columns instead of one very long column */
+    .photo-wall {
+        columns: 2;
+        column-gap: 10px;
+    }
+
+    .wall-photo {
+        margin-bottom: 10px;
+        border-radius: 14px;
+    }
+
+    /* Tall (portrait) videos should not be taller than the screen */
+    .video-wall-item video {
+        max-height: 80vh;
+        max-height: 80dvh;
+    }
+
+    /* Birthday book (stacked pages): page number was overlapping content */
+    .page {
+        display: flex;
+        min-height: 480px;
+    }
+
+    .page-inner {
+        flex: 1;
+        height: auto;
+        padding-bottom: 60px;
+    }
+
+    /* Photo viewer */
+    .photo-viewer {
+        padding: 16px;
+    }
+
+    .photo-viewer img {
+        max-width: 94vw;
+        max-height: 85vh;
+        max-height: 85dvh;
+    }
+
+    .viewer-close {
+        width: 44px;
+        height: 44px;
+        right: 14px;
+        top: 14px;
+        font-size: 30px;
+    }
+
+    .final-message {
+        font-size: 16px;
+    }
+
+}
+
+
+/* ---------- Small phones (up to 420px) ---------- */
+
+@media (max-width: 420px) {
+
+    .opening-small,
+    .opening-date {
+        font-size: 15px;
+    }
+
+    .main-btn {
+        padding: 14px 24px;
+        font-size: 16px;
+    }
+
+    .memory-text {
+        font-size: 15px;
+    }
+
+    .timeline-content h3 {
+        font-size: 19px;
+    }
+
+    .letter-content h2 {
+        font-size: 26px;
+    }
+
+}
